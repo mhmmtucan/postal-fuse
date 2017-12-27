@@ -6,8 +6,10 @@ The top-level directory will contain two-directories: NAMES and CODES. The NAMES
 
 # Usage
 
-To compile: gcc rofs.c -o rofs -Wall -ansi -W -std=c99 -g -ggdb -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -lfuse
-For mounting: ./rofs myfs/
-For unmounting: fusermount -u myfs
+To compile: `gcc rofs.c -o rofs -Wall -ansi -W -std=c99 -g -ggdb -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -lfuse`
+
+For mounting: `./rofs myfs/`
+
+For unmounting: `fusermount -u myfs`
 
 Mounting file system to "myfs" folder makes it is possible to create all the files and folders directly under myfs directory with using a hierarchy. In other words myfs become root folder of our file system.
